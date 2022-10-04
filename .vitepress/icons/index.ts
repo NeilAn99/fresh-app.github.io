@@ -12,6 +12,7 @@ import Solid from "./solid.svg";
 import Svelte from "./svelte.png";
 import T3 from "./t3.svg";
 import TSDX from "./tsdx.png";
+import TurboRepo from "./turborepo.svg"
 import Vite from "./vite.svg";
 import VSCode from "./vscode.png";
 import Yarn from "./yarn.svg";
@@ -49,6 +50,9 @@ function getIcon(name: string): string | [string, string] {
   }
   if (name.includes("tsdx")) {
     return TSDX;
+  }
+  if (name.includes("turbo")) {
+    return TurboRepo;
   }
   if (name.includes("vite")) {
     return Vite;
